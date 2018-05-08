@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="title">热销景点</div>
-    <div class="item border-bottom" v-for="item of recommendList" :key="item.id">
+    <div class="item border-bottom" v-for="item of list" :key="item.id">
       <img :src="item.imgUrl" alt="" class="item-img">
       <div class="item-info">
         <p class="item-title">{{item.title}}</p>
@@ -15,21 +15,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        title: '深圳小梅沙海洋世界',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1804/3d/3da274777b963b2a3.water.jpg_200x200_aef4339e.jpg',
-        id: '01',
-        desc: '深圳小梅沙海洋世界深圳小梅沙海洋世界'
-      },
-      {
-        title: '深圳小梅沙海洋世界',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1804/3d/3da274777b963b2a3.water.jpg_200x200_aef4339e.jpg',
-        id: '02',
-        desc: '深圳小梅沙海洋世界深圳小梅沙海洋世界'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
