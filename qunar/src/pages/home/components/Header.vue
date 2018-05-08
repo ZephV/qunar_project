@@ -7,10 +7,12 @@
       <span class="iconfont">&#xe632;</span>
       输入城市/景点/游玩主题
     </div>
-    <div class="header-right">
+    <router-link to='/city'>
+      <div class="header-right" >
       城市
       <span class="iconfont icon-arrow">&#xe600;</span>
       </div>
+    </router-link>
   </div>
 </template>
 
@@ -24,8 +26,8 @@ export default {
   @import '~styles/veribles.styl'
   .header
     display:flex
-    height:.86rem
-    line-height:.86rem
+    height: $headerHeight
+    line-height: $headerHeight
     background-color:$bgColor
     color:#fff
     .header-left
