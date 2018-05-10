@@ -30,6 +30,4 @@ export default {
       width: 0.64rem
       font-size:.4rem
       color: #fff
-
-
 </style>
