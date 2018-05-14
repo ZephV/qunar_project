@@ -1,14 +1,18 @@
 <template>
   <div>
+
     <div class="title">热销景点</div>
-    <div class="item border-bottom" v-for="item of list" :key="item.id">
-      <img :src="item.imgUrl" alt="" class="item-img">
-      <div class="item-info">
-        <p class="item-title">{{item.title}}</p>
-        <p class="item-desc">{{item.desc}}</p>
-        <button class="item-btn">查看详情</button>
-      </div>
-    </div>
+    <ul>
+      <router-link :to="'/detail/' + item.id" tag="li"  class="item border-bottom" v-for="item of list" :key="item.id">
+        <img :src="item.imgUrl" alt="图片" class="item-img">
+        <div class="item-info">
+          <p class="item-title">{{item.title}}</p>
+          <p class="item-desc">{{item.desc}}</p>
+          <button class="item-btn">查看详情</button>
+        </div>
+      </router-link>
+    </ul>
+
   </div>
 </template>
 
