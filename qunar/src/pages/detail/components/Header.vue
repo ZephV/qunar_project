@@ -25,7 +25,6 @@ export default {
   },
   methods: {
     handleScroll () {
-      console.log('a')
       const top = document.documentElement.scrollTop
       if (top > 60) {
         let opacity = top / 140
@@ -66,6 +65,7 @@ export default {
     top: 0
     left: 0
     right: 0
+    z-index:2
     overflow: hidden
     height: $headerHeight
     line-height: $headerHeight
