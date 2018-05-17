@@ -38,7 +38,6 @@ export default {
   methods: {
     handleGallaryClick () {
       this.showGallary = true
-      console.log('342')
     },
     handleGallaryClose () {
       this.showGallary = false
