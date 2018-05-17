@@ -47,7 +47,7 @@ export default {
       }
     }
   },
-  mounted () {
+  activated () {
     this.getDetailInfo()
   }
 }
@@ -55,5 +55,5 @@ export default {
 
 <style lang="stylus" scoped>
   .container
-    height: 50rem
+    height: 15rem
 </style>
